@@ -77,7 +77,7 @@ h6,
 
 /*** Button ***/
 .btn {
-  font-family: "Playfair Display", serif;
+  font-family: "IBM Plex Serif", serif;
   font-weight: 600;
   transition: 0.5s;
 }
@@ -121,7 +121,7 @@ h6,
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
-  font-family: "Playfair Display", serif;
+  font-family: "IBM Plex Serif", serif;
   position: relative;
   margin-left: 25px;
   padding: 35px 0;
@@ -507,4 +507,7 @@ h6,
   .footer-about {
     margin-bottom: -75px;
   }
+}
+.rotated {
+  transform: rotate(45deg);
 }
