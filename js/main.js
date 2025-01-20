@@ -122,5 +122,10 @@
         }
     });
     
-})(jQuery);
+    // Update the year dynamically
+    $(document).ready(function() {
+        const currentYear = new Date().getFullYear();
+        $("#current-year").text(currentYear);
+    });
 
+})(jQuery);
