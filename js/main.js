@@ -127,7 +127,7 @@
         const currentYear = new Date().getFullYear();
         $("#current-year").text(currentYear);
     });
-    
+    // Update the years in business dynamically
     $(document).ready(function() {
         const currentYear = new Date().getFullYear();
         const foundationYear = 1966;
