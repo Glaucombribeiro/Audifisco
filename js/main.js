@@ -127,5 +127,11 @@
         const currentYear = new Date().getFullYear();
         $("#current-year").text(currentYear);
     });
-
+    
+    $(document).ready(function() {
+        const currentYear = new Date().getFullYear();
+        const foundationYear = 1966;
+        const yearsInBusiness = currentYear - foundationYear;
+        $("#anos").text(yearsInBusiness);
+    });
 })(jQuery);
