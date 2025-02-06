@@ -301,30 +301,27 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn"
-                        data-wow-delay="0.9s">
-                        <form action="https://formsubmit.co/glaucombribeiro@gmail.com" method="POST">
+                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+                        <!-- Altere a action para apontar para o script PHP que você criará, por exemplo, send-email.php -->
+                        <form action="/php/send-email.php" method="POST">
                             <div class="row g-3">
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Seu Nome"
-                                        style="height: 55px;" required>
+                                    <input type="text" name="nome" class="form-control bg-light border-0" placeholder="Seu Nome" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Seu Email"
-                                        style="height: 55px;" required>
+                                    <input type="email" name="email" class="form-control bg-light border-0" placeholder="Seu Email" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Selecione o serviço</option>
-                                        <option value="1">Auditoria</option>
-                                        <option value="2">Consultoria</option>
-                                        <option value="3">Assessoria</option>
-                                        <option value="3">Outro</option>
+                                    <select name="servico" class="form-select bg-light border-0" style="height: 55px;">
+                                        <option value="">Selecione o serviço</option>
+                                        <option value="Auditoria">Auditoria</option>
+                                        <option value="Consultoria">Consultoria</option>
+                                        <option value="Assessoria">Assessoria</option>
+                                        <option value="Outro">Outro</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Mensagem"
-                                        required></textarea>
+                                    <textarea name="mensagem" class="form-control bg-light border-0" rows="3" placeholder="Mensagem" required></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-dark w-100 py-3" type="submit">Solicite um Orçamento</button>
@@ -332,7 +329,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div>                
             </div>
         </div>
     </div>
